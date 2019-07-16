@@ -1,0 +1,9 @@
+﻿#BNF+IAT 1.0 UTF-8;
+
+!grammar cmd; //语法名称
+!slot <cmd>; // 槽定义
+!start <cmdstart>; // 开始工作
+
+<cmdstart>:<cmd>;
+
+<cmd>:相册!id(1)|音乐!id(2)|退出!id(999)|摄像头!id(4)|游戏!id(5);
